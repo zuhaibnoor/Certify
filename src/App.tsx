@@ -11,7 +11,7 @@ export default function App() {
         </div>
 
 
-      <div className="h-[88%] w-full flex flex-row">
+      <div className="h-[88%] w-full flex flex-col md:flex-row">
       {/* border-2 border-gray-900 */}
         <div className="border-2 border-gray-900 w-[50%] flex flex-col justify-center items-center p-1 md:p-5">
           <div className=" h-full w-full md:w-[75%] shadow-xl">
