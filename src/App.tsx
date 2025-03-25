@@ -13,14 +13,14 @@ export default function App() {
 
       <div className="h-[88%] w-full flex flex-col md:flex-row">
       {/* border-2 border-gray-900 */}
-        <div className="border-2 border-gray-900 w-[50%] flex flex-col justify-center items-center p-1 md:p-5">
+        <div className="border-2 border-gray-900 w-full flex flex-col justify-center items-center p-1 md:p-5 md:w-[50%]">
           <div className=" h-full w-full md:w-[75%] shadow-xl">
           <img src="./header.jpg" alt="Header" className="w-full h-auto" />
             <div className="flex-grow"></div>
             <img src="./footer.jpg" alt="Footer" className="w-full h-auto" />
           </div>
         </div>
-        <div className="border-2 border-gray-900 w-[50%]"></div>
+        <div className="border-2 border-gray-900 w-full md:w-[50%]"></div>
       </div>
 
     </div>
