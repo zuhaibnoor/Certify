@@ -1,6 +1,18 @@
 import './App.css'
+import Form from './components/Form';
+import { useState } from 'react';
 
 export default function App() {
+  const [formData, setFormData] = useState({
+      name: "Muhammad Owais",
+      year: "2nd Year",
+      department: "Computer and Information System Engineering",
+      durationWeeks: "8",
+      domain: "Computer Vision",
+      description: "His tasks include frames extraction form CCTV footage, annotation of frames using roboflow, data preprocessing using pandas and numpy and training and testing of computer vision model.",
+      startDate: "22 Feb 2024",
+      endDate: "22 Apr 2024",
+    });
   return (
     <div className="flex flex-col h-screen w-screen">
         <div className=" flex flex-row h-[12%] w-full bg-[#d59d35] apply-shadow">
@@ -25,23 +37,21 @@ export default function App() {
             <div className="flex-grow text-[12px] p-10 pt-3 pb-3 bg-white">
               
               <p className="text-justify">{/* first para */}
-                This is to certify that Muhammad Owais, a 2nd year student enrolled in the
-                Department of Computer and Information System Engineering at NED University
-                of Engineering & Technology, has successfully completed 8 week internship at
+                This is to certify that <span className='font-semibold' >{formData.name}</span>, a {formData.year} student enrolled in the
+                Department of {formData.department} at NED University
+                of Engineering & Technology, has successfully completed {formData.durationWeeks} week internship at
                 Smart City Lab, NCAI, NEDUET.
               </p>{/* first para */}
 
               
               <p className="text-justify"> {/* second para */} <br />
-                During this period, Mr. Muhammad Owais contributed as computer vision intern.
-                His tasks include frames extraction form CCTV footage, annotation of frames
-                using roboflow, data preprocessing using pandas and numpy and training and
-                testing of computer vision model. 
+                During this period, <span className='font-semibold' >Mr. {formData.name}</span> contributed as {formData.domain} intern.
+                 {formData.description}. 
               </p> {/* second para */}
 
 
               <p className=""> <br />
-              The internship spanned from 22 Feb 2024 to 22 Apr 2024. 
+              The internship spanned from {formData.startDate} to {formData.endDate}. 
               </p>
 
               <div className="flex flex-col w-[45%] ml-2 text-[12px]">
@@ -63,7 +73,7 @@ export default function App() {
 
         {/* editor pane */}
         <div className=" w-full md:w-[50%] h-full">
-          {/* border-2 border-gray-900 */}
+          <Form formData={formData} setFormData={setFormData} />
         </div>{/* editor pane */}
 
       </div>
