@@ -21,8 +21,8 @@ const defaultFormData: FormDataType = {
   domain: "<Domain>",
   description:
     "<Tasks done>",
-  startDate: "<Start date>",
-  endDate: "<End data>",
+  startDate: "12 Feb 2012",
+  endDate: "12 Feb 2012",
 };
 
 export default function App() {
