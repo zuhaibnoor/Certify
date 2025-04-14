@@ -14,15 +14,15 @@ export interface FormDataType {
 }
 
 const defaultFormData: FormDataType = {
-  name: "Muhammad Owais",
-  year: "2nd Year",
-  department: "Computer and Information System Engineering",
-  durationWeeks: "8",
-  domain: "Computer Vision",
+  name: "<Full name>",
+  year: "<Year>",
+  department: "<Department>",
+  durationWeeks: "<Duration>",
+  domain: "<Domain>",
   description:
-    "His tasks include frames extraction form CCTV footage, annotation of frames using roboflow, data preprocessing using pandas and numpy and training and testing of computer vision model.",
-  startDate: "22 Feb 2024",
-  endDate: "22 Apr 2024",
+    "<Tasks done>",
+  startDate: "<Start date>",
+  endDate: "<End data>",
 };
 
 export default function App() {
